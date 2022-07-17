@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+  background: rgb(232,232,232);
+}
+
+#calculator{
+  border: 1px solid rgb(34,37,45);
+  width: 30%;
+  height: 95vh;
+  border-radius: 10px;
+  border-style: none;
+  background: rgb(42,45,57);
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background: rgb(37, 40, 50);
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.icons svg{
+  margin: 35px;
+  cursor: pointer;
+}
+
+.plus svg{
+  margin: 0 auto;
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  align-items: center;
+  padding: 10px 20px;
+
+}
+
+.row{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+
+
+.display {
+  margin-top: 60px;
+  height: 50px;
+  width: 100%;
+  text-align: right;
+  padding: 20px 40px;
+  font-size: 35px;
+  position: relative;
+}
+.display-1 {
+  font-size: 24px;
+  height: 50px;
+  overflow: hidden;
+}
+.temp-result {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  font-size: 20px;
+  opacity: 0.3;
+  display: none;
+}
+
+
+#screen{
+  width: 100%;
+  height: 35vh;
+  background-color: rgb(34,37,45);
+  border-radius: 10px;
+  color: rgb(227,230,234);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+}
+
+.row .col{
+  width: 60%;
+  margin: 8px;
+  height: 100%;
+  padding: 8px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.num{
+  color: rgb(232,232,232);
+  background-color: rgb(34,37,45);
+}
+
+.mode{
+  color: rgb(93,219,200);
+  background-color: rgb(34,37,45);
+}
+
+.operator{
+  color: rgb(210,111,113);
+  background-color: #22252d;
+}
+
+.operator-1{
+  color: rgb(210,111,113);
+  background-color: #22252d;
+}
+
+hr{
+  margin: 0 auto;
+  width: 30%;
+  margin-top: 15px;
+  border: 1px solid rgb(60, 64, 80);
+  border-radius: 10px;
+}
+
+.col { transition: all .2s ease-in-out; }
+.col:hover { transform: scale(0.9); }
+
+/* media queries */
+@media (max-width: 800px){
+  #calculator {
+  width: 40%;
+}
+}
+
+@media (max-width: 600px){
+  #calculator{
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    border-radius: 0;
+  }
+  }
