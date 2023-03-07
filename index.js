@@ -78,14 +78,14 @@ clearAllEl.addEventListener("click", () => {
   dis1Num = "";
   dis2Num = "";
   display1El.innerText = "";
-  display2El.innerText = "";
+  display2El.innerText = "0";
   result = "";
   tempResultEl.innerText = "";
 });
 
 clearLastEl.addEventListener("click", () => {
   display2El.innerText = "";
-  dis2Num = "";
+  dis2Num = "0";
 });
 
 window.addEventListener("keydown", (e) => {
